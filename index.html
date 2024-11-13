@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Profissional</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+</head>
+<body>
+    <div class="calculadora-container">
+        <header class="calculadora-header">
+            <h1>Calculadora</h1>
+        </header>
+        <main class="calculadora">
+            <div id="display" class="display">0</div>
+            <div class="botao-container">
+                <button class="botao funcao" data-acao="limpar">C</button>
+                <button class="botao funcao" data-acao="apagar">←</button>
+                <button class="botao operacao" data-valor="%">%</button>
+                <button class="botao operacao" data-valor="/">÷</button>
+
+                <button class="botao" data-valor="7">7</button>
+                <button class="botao" data-valor="8">8</button>
+                <button class="botao" data-valor="9">9</button>
+                <button class="botao operacao" data-valor="*">×</button>
+
+                <button class="botao" data-valor="4">4</button>
+                <button class="botao" data-valor="5">5</button>
+                <button class="botao" data-valor="6">6</button>
+                <button class="botao operacao" data-valor="-">-</button>
+
+                <button class="botao" data-valor="1">1</button>
+                <button class="botao" data-valor="2">2</button>
+                <button class="botao" data-valor="3">3</button>
+                <button class="botao operacao" data-valor="+">+</button>
+
+                <button class="botao zero" data-valor="0">0</button>
+                <button class="botao" data-valor=".">.</button>
+                <button class="botao igual" data-acao="calcular">=</button>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

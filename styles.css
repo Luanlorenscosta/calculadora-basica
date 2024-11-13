@@ -1,0 +1,111 @@
+/* Definindo variáveis e estilo principal */
+:root {
+    --cor-fundo: #f4f4f4;
+    --cor-texto: #333;
+    --cor-operacao: #4a90e2;
+    --cor-funcao: #e74c3c;
+    --cor-igual: #2ecc71;
+    --cor-botao: #fff;
+    --cor-borda: #ddd;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+        /* Configuração do degradê radial para cada canto */
+        background: radial-gradient(
+            circle at top left, 
+            white, 
+            transparent 40%
+        ),
+        radial-gradient(
+            circle at top right, 
+            white, 
+            transparent 40%
+        ),
+        radial-gradient(
+            circle at bottom left, 
+            white, 
+            transparent 40%
+        ),
+        radial-gradient(
+            circle at bottom right, 
+            white, 
+            transparent 40%
+        ),
+        /* Cor de fundo para o centro */
+        #030203;
+        
+        /* Combina as camadas de fundo */
+        background-blend-mode: screen;
+        height: 100vh;
+        margin: 0;
+        
+}
+
+.calculadora-container {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.calculadora-header {
+    background-color: var(--cor-texto);
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+}
+
+.display {
+    background-color: #fff;
+    padding: 20px;
+    font-size: 2.5rem;
+    text-align: right;
+    border-bottom: 1px solid var(--cor-borda);
+    font-weight: bold;
+    color: var(--cor-texto);
+}
+
+.botao-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.botao {
+    padding: 20px;
+    font-size: 1.5rem;
+    border: 1px solid var(--cor-borda);
+    background-color: var(--cor-botao);
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.botao:active {
+    transform: scale(0.95);
+}
+
+.funcao {
+    background-color: var(--cor-funcao);
+    color: #fff;
+}
+
+.operacao {
+    background-color: var(--cor-operacao);
+    color: #fff;
+}
+
+.igual {
+    background-color: rgb(5, 3, 3);
+    color: #fff;
+    grid-column: span 2;
+}
+
+.zero {
+    grid-column: span 2;
+}
